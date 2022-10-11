@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tableLayout" />
+
+    <TextView
+        android:id="@+id/numeroDeMovimientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <TableRow
+            android:id="@+id/Tabla0"
+            android:layout_width="match_parent"
+            android:layout_height="83dp">
+
+            <ImageButton
+                android:id="@+id/imageButtoncerco8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cerco8" />
+
+            <ImageButton
+                android:id="@+id/imageButtoncerco1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cerco1" />
+
+            <ImageButton
+                android:id="@+id/imageButtoncerco2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cerco2" />
+
+            <ImageButton
+                android:id="@+id/imageButtonpasto1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pastito" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Tabla1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27"
+            tools:layout_editor_absoluteY="322dp">
+
+            <ImageButton
+                android:id="@+id/imageButtoncerco7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cerco7" />
+
+            <ImageButton
+                android:id="@+id/imageButtoninvisible"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:alpha="0"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/imageButtoncerco3"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cerco3" />
+
+            <ImageButton
+                android:id="@+id/imageButtoncabra"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cabra" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/Tabla2"
+            android:layout_width="match_parent"
+            android:layout_height="11dp">
+
+            <ImageButton
+                android:id="@+id/imageButtoncerco6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cerco6" />
+
+            <ImageButton
+                android:id="@+id/imageButtoncerco5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cerco5" />
+
+            <ImageButton
+                android:id="@+id/imageButtoncerco4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cerco4" />
+
+            <ImageButton
+                android:id="@+id/imageButtonpasto2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:onClick="condicionesDeInteraccion"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pastito" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
